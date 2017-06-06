@@ -1,0 +1,8 @@
+M - Model
+  - Code we write to access our database
+    -Queries to find a tag, pull store revews, anything to fetch datat from the database
+V - View
+  - View is our template. In this case we are using Pug
+C - Controller
+  - Like a traffic cop, sits in the middle, tells the model to get the data, then once it has the data it sends it to the view
+    -Gets the data and puts it into the template
