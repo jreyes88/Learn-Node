@@ -11,9 +11,9 @@ const storeSchema = new mongoose.Schema({
   slug: String,
   description: {
     type: String,
-    trim: true,
+    trim: true
   },
-  tag: [String]
+  tags: [String]
 });
 
 storeSchema.pre('save', function(next) {
@@ -23,8 +23,7 @@ storeSchema.pre('save', function(next) {
   }
   this.slug = slug(this.name);
   next();
-
-  // TODO: make more resiliant so slugs are unique
+  // TODO make more resiliant so slugs are unique
 });
 
 module.exports = mongoose.model('Store', storeSchema);
