@@ -89,7 +89,7 @@ function autocomplete(input, latInput, lngInput) {
   input.on('keydown', function (e) {
     if (e.keycode === 13) e.preventDefault();
   });
-}
+};
 
 exports.default = autocomplete;
 
